@@ -70,7 +70,7 @@
                     <h2>Pónte en contacto para un servicio de calidad</h2><br>
                     <div class="container">
 		                <div class="row">
-		                <div class="col-lg-8 margin-btm-30">
+		                    <div class="col-lg-8 margin-btm-30">
 		                    <form method="post" action="#" class="b-contact">
 		                        <div class="row">
 		                            <div class="col-lg-12">
@@ -103,7 +103,10 @@
 		                        </div>
 		                    </form>
 		                </div><!--contact col end-->
-		            </div>
+                            <div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.0236333207963!2d-100.28910804989887!3d25.67051128359818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bfdc19b6dfbf%3A0x1de66bce8fbec8d1!2sRam%C3%B3n+Oviedo+Mart%C3%ADnez+101%2C+Buenos+Aires%2C+64800+Monterrey%2C+N.L.!5e0!3m2!1ses!2smx!4v1530713568228" width="370" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+		                </div>
 		            </div>
                 </div>
                 <div class="col-lg-4">
@@ -157,5 +160,17 @@
         <script src="owl-carousel/owl.carousel.min.js"></script>
         <script src="lightbox2/dist/js/lightbox.min.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+            var uluru = {lat: -25.344, lng: 131.036};
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 4, center: uluru});
+            var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+        </script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8aVzuwCC78q13dOe4dAXTthdMs3C2yqs&callback=initMap">
+        </script>
     </body>
 </html>

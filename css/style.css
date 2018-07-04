@@ -1687,4 +1687,10 @@ Footer styles
     font-size: 20px;
     margin: 0px;
   }
+
+  #map {
+   width: 50%%;
+   height: 20px;
+   background-color: grey;
+ }
 }
